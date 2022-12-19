@@ -1,0 +1,1680 @@
+<div class="cv-create" id="cvCreate">
+	<div class="cv-content-wrapper pt-0 pt-lg-5 px-3">
+		<div class="row">
+			
+			<div class="col-lg-3 col-12 mt-2 px-md-4">
+				<div class="position-sticky" style="top:20px;">
+					<ul class="row py-4 list-unstyled bg-white rounded shadow">
+						<li class="col-12 mb-3">
+							<h5>
+								Özgeçmiş Alanları
+							</h5>
+						</li>
+						<li class="col-12">
+							<a class="btn btn-light btn-sm mb-1 w-100 d-flex align-items-center" (click)="scrollToView('#contact_info')">
+								<fa-icon [icon]="['fas', 'arrow-right']" class="me-2"></fa-icon> İletişim Bilgileri
+							</a>
+						</li>
+						<li class="col-12">
+							<a class="btn btn-light btn-sm mb-1 w-100 d-flex align-items-center" (click)="scrollToView('#summary')">
+								<fa-icon [icon]="['fas', 'arrow-right']" class="me-2"></fa-icon> Özet Bilgi
+							</a>
+						</li>
+						<li class="col-12">
+							<a class="btn btn-light btn-sm mb-1 w-100 d-flex align-items-center" (click)="scrollToView('#work_experience')">
+								<fa-icon [icon]="['fas', 'arrow-right']" class="me-2"></fa-icon> İş Deneyimleri
+							</a>
+						</li>
+						<li class="col-12">
+							<a class="btn btn-light btn-sm mb-1 w-100 d-flex align-items-center" (click)="scrollToView('#education_info')">
+								<fa-icon [icon]="['fas', 'arrow-right']" class="me-2"></fa-icon> Eğitim Bilgileri
+							</a>
+						</li>
+						<li class="col-12">
+							<a class="btn btn-light btn-sm mb-1 w-100 d-flex align-items-center" (click)="scrollToView('#foreign_language')">
+								<fa-icon [icon]="['fas', 'arrow-right']" class="me-2"></fa-icon> Yabancı Diller
+							</a>
+						</li>
+						<li class="col-12">
+							<a class="btn btn-light btn-sm w-100 d-flex align-items-center" (click)="scrollToView('#certificate')">
+								<fa-icon [icon]="['fas', 'arrow-right']" class="me-2"></fa-icon> Sertifikalar
+							</a>
+						</li>
+						<li class="col-12">
+							<a class="btn btn-light btn-sm w-100 d-flex align-items-center" (click)="scrollToView('#seminer_kurs')">
+								<fa-icon [icon]="['fas', 'arrow-right']" class="me-2"></fa-icon> Seminer ve Kurs
+							</a>
+						</li>
+						<li class="col-12">
+							<a class="btn btn-light btn-sm w-100 d-flex align-items-center" (click)="scrollToView('#project')">
+								<fa-icon [icon]="['fas', 'arrow-right']" class="me-2"></fa-icon> Projeler
+							</a>
+						</li>
+						<li class="col-12">
+							<a class="btn btn-light btn-sm w-100 d-flex align-items-center" (click)="scrollToView('#referanslar')">
+								<fa-icon [icon]="['fas', 'arrow-right']" class="me-2"></fa-icon> Referanslar
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-9 col-12 mt-2 px-md-4">
+				<div class="row mb-4" id="contact_info">
+					<div class="col-12 bg-white rounded shadow">
+						<div class="row">
+							<div class="col-12 p-2 p-lg-4 shadow-sm mb-4">
+								<h3>
+									İletişim Bilgileri
+								</h3>
+							</div>
+							<div class="col-12 p-2 p-lg-4">
+								<div class="row mb-2">
+									<div class="col-lg-2 col-md-3 col-sm-4 col-12">
+										<input type="file" name="profileImage" id="profileImage" hidden/>
+										<div class="add-image-profile" (click)="clickImageInput()">
+											+ Resim ekle
+										</div>
+									</div>
+									<div class="col-lg-10 col-md-9 col-sm-8 col-12">
+										<div class="row">
+											<div class="col-12 mb-3">
+												<h4>
+													Furkan ŞAHİN
+												</h4>
+											</div>
+											<div class="col-12">
+												<div class="row">
+													<div class="col-sm-6 col-12 mb-2">
+														<small class="text-secondary">
+															E-Posta
+														</small>
+														<br/>
+														<span class="font-weight-bold">
+															yildizfurkansahin@gmail.com
+														</span>
+													</div>
+													<div class="col-sm-6 col-12 mb-2">
+														<small class="text-secondary">
+															Doğum Tarihi
+														</small>
+														<br/>
+														<span class="font-weight-bold">
+															27.01.1995
+														</span>
+													</div>
+													<div class="col-12 mb-2">
+														<small class="text-secondary">
+															Telefon
+														</small>
+														<br/>
+														<span class="font-weight-bold">
+															0539 873 7712
+														</span>
+													</div>
+													<div class="col-12 mb-2">
+														<small class="text-secondary">
+															Adres
+														</small>
+														<br/>
+														<span class="font-weight-bold">
+															Velibaba Mahallesi Zeynep Sokak No:9 Pendik/İstanbul
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row mb-4" id="summary">
+					<div class="col-12 bg-white rounded shadow">
+						<div class="row">
+							<div class="col-12 p-2 p-lg-4 shadow-sm mb-4">
+								<h3>
+									Özet Bilgi
+								</h3>
+							</div>
+							<div class="col-12 p-2 p-lg-4">
+								<div class="row">
+									<div class="col-12">
+										<div class="row">
+											<div class="col-12 mb-3">
+												<span>
+													Eğitim bilgileriniz, iş deneyimleriniz, yetenekleriniz ve özgeçmişinizde bulunmasını istediğiniz diğer bilgileri <strong>firmaların anahtar kelime aramalarında daha kolay bulunmanızı sağlamak için</strong> özet halinde ekleyebilirsiniz.
+												</span>
+											</div>
+											<div class="col-12">												
+												<editor
+													apiKey="2tc56hde9q30zeb835bczxj559w0h7vtwb9znqpa08y8e605"
+													[init]="{
+														language : 'tr',
+														min_height: 500,
+														preview_styles: 'font-size color',
+														resize: 'both',
+														plugins: 'autolink lists lists directionality autoresize',
+														menubar: false,
+														toolbar: 'bold italic underline italic | alignleft aligncenter alignright alignjustify |  numlist bullist',
+														grid_preset: 'Bootstrap3',
+														toolbar_mode: 'wrap',
+														automatic_uploads: true,
+														tinycomments_mode: 'embedded',
+														tinycomments_author: 'Furkan ŞAHİN',
+														relative_urls: false,
+														remove_script_host: false,
+														convert_urls: false
+													}"
+
+													[(ngModel)]="ozet"
+												></editor> 
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mb-4" id="work_experience">
+					<div class="col-12 bg-white rounded shadow">
+						<div class="row">
+							<div class="col-12 p-2 p-lg-4 shadow-sm mb-4">
+								<h3>
+									İş Deneyimleri
+									<button class="btn btn-sm btn-outline-secondary rounded-pill ms-2 pt-0" (click)="newWorkExperience()">
+										<small>
+											+ Yeni Ekle
+										</small>
+									</button>
+								</h3>
+							</div>
+							<div class="col-12 p-2 p-lg-4">
+								<div class="row">
+									<div class="col-12">
+										<div class="row" *ngIf="!isAddEditCv.is_deneyimi.isShow">
+											<div class="col-12 pb-4 mb-4 border-bottom" *ngFor="let deneyim of is_deneyimi;let index = index">
+												<div class="row">
+													<div class="col-lg-2 col-md-3 col-sm-4 col-12">
+														<div class="row">
+															<div class="col-12">
+																<img src="assets/images/firma-logosuz.webp" alt="Firma Logo"/>
+															</div>
+															<div class="col-12 mt-4" ngBindHtml="getOperationTime(deneyim.baslangicTarihi, deneyim.bitisTarihi)">
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-10 col-md-9 col-sm-8 col-12">
+														<div class="row">
+															<div class="col-12 d-flex justify-content-end">
+																<small (click)="editWorkExperience(deneyim,index)" role="button">
+																	<fa-icon [icon]="['fas', 'pencil']" class=""></fa-icon>
+																</small>
+															</div>
+															<div class="col-12 mb-2" *ngIf="deneyim.pozisyon != ''">
+																<small class="text-secondary">
+																	Pozisyon
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{deneyim.pozisyon}}
+																</span>
+															</div>
+															<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-2">
+																<small class="text-secondary">
+																	Firma Adı
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{deneyim.firmaAdi}}
+																</span>
+															</div>
+															<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-2">
+																<small class="text-secondary">
+																	Ülke
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{deneyim.ulke}}
+																</span>
+															</div>
+															<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-2">
+																<small class="text-secondary">
+																	Şehir
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{deneyim.il}}
+																</span>
+															</div>
+															<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-2" *ngIf="deneyim.firmaSektoru != ''">
+																<small class="text-secondary">
+																	Firma Sektörü
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{deneyim.firmaSektoru}}
+																</span>
+															</div>
+															<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-2">
+																<small class="text-secondary">
+																	Başlangıç Tarihi
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{deneyim.baslangicTarihi}}
+																</span>
+															</div>
+															<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-2">
+																<small class="text-secondary">
+																	Bitiş Tarihi
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{deneyim.halaCalisiyorum == true ? "Hala çalışıyorum" : deneyim.bitisTarihi}}
+																</span>
+															</div>
+															<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-2" *ngIf="deneyim.calismaSekli != ''">
+																<small class="text-secondary">
+																	Çalışma Şekli
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{deneyim.calismaSekli}}
+																</span>
+															</div>
+															<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-2" *ngIf="deneyim.isAlani != ''">
+																<small class="text-secondary">
+																	İş Alanı
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{deneyim.isAlani}}
+																</span>
+															</div>
+															<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-2" *ngIf="deneyim.isTanimi != ''">
+																<small class="text-secondary">
+																	İş Tanımı
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{deneyim.isTanimi}}
+																</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row" *ngIf="isAddEditCv.is_deneyimi.isShow">
+											<div class="col-12">
+												<div class="row">
+													<div class="col-md-6">
+														<div class="row">
+															<div id="firma_adi_group" role="group" class="form-group mb-2">
+																<label id="firma_adi_label" for="firma_adi_input" class="d-block">Firma Adı</label>
+																<div>
+																	<input class="border-dark form-control" id="firma_adi_input" type="text" placeholder="Firma Adı" [(ngModel)]="isAddEditCv.is_deneyimi.content.firmaAdi">
+																</div>
+															</div>
+
+															<div id="pozisyon_group" role="group" class="form-group mb-2">
+																<label id="pozisyon_label" for="pozisyon_input" class="d-block">Pozisyon</label>
+																<div>
+																	<ng-select [(ngModel)]="isAddEditCv.is_deneyimi.content.pozisyon" placeholder="Pozisyon Seçiniz">
+																		<ng-option *ngFor="let position of positionList" [value]="position">{{position}}</ng-option>
+																	 </ng-select>
+																</div>
+															</div>
+															
+															<div id="baslangic_tarihi_group" role="group" class="col-md-4 col-12 form-group mb-2">
+																<label id="baslangic_tarihi_label" for="baslangic_tarihi_input" class="d-block">Başlangıç Tarihi</label>
+																<div>
+																	<input class="border-dark form-control" id="baslangic_tarihi_input" type="month" placeholder="Başlangıç.." [(ngModel)]="isAddEditCv.is_deneyimi.content.baslangicTarihi">
+																</div>
+															</div>
+
+															<div id="bitis_tarihi_group" role="group" class="col-md-4 col-12 form-group mb-2">
+																<label id="bitis_tarihi_label" for="bitis_tarihi_input" class="d-block">Bitiş Tarihi</label>
+																<div>
+																	<input class="border-dark form-control" id="bitis_tarihi_input" type="month" placeholder="Bitiş.." [(ngModel)]="isAddEditCv.is_deneyimi.content.bitisTarihi">
+																</div>
+															</div>
+
+															<div id="hala_calisiyorum_group" role="group" class="col-md-4 col-12 form-group mb-2">
+																<div class="form-check mt-4 pt-2">
+																	<input class="form-check-input" type="checkbox" id="hala_calisiyorum_input" value=true unchecked-value=false [(ngModel)]="isAddEditCv.is_deneyimi.content.halaCalisiyorum">
+																	<label class="form-check-label" for="hala_calisiyorum_input">
+																		Hala çalışıyorum
+																	</label>
+																</div>
+															</div>
+
+															<div id="firma_sektoru_group" role="group" class="col-md-6 col-12 form-group mb-2">
+																<label id="firma_sektoru_label" for="firma_sektoru_input" class="d-block">Firma Sektörü</label>
+																<div>
+																	<ng-select [(ngModel)]="isAddEditCv.is_deneyimi.content.firmaSektoru" placeholder="Sektör Seçiniz">
+																		<ng-option *ngFor="let sector of sectorList" [value]="sector">{{sector}}</ng-option>
+																	 </ng-select>
+																</div>
+															</div>
+
+															<div id="is_alani_group" role="group" class="col-md-6 col-12 form-group mb-2">
+																<label id="is_alani_label" for="is_alani_input" class="d-block">İş Alanı</label>
+																<div>
+																	<ng-select [(ngModel)]="isAddEditCv.is_deneyimi.content.isAlani" placeholder="İş Alanı Seçiniz">
+																		<ng-option *ngFor="let businessArea of businessAreaList" [value]="businessArea">{{businessArea}}</ng-option>
+																	 </ng-select>
+																</div>
+															</div>
+
+															<div id="calisma_sekli_group" role="group" class="col-12 form-group mb-2">
+																<label id="calisma_sekli_label" for="calisma_sekli_input" class="d-block">Çalışma Şekli</label>
+																<div>
+																	<ng-select [(ngModel)]="isAddEditCv.is_deneyimi.content.calismaSekli" placeholder="Çalışma Şekli Seçiniz">
+																		<ng-option *ngFor="let wayOfWorking of wayOfWorkingList" [value]="wayOfWorking">{{wayOfWorking}}</ng-option>
+																	 </ng-select>
+																</div>
+															</div>
+
+															<div id="ulke_group" role="group" class="col-md-6 col-12 form-group mb-2">
+																<label id="ulke_label" for="ulke_input" class="d-block">Ülke</label>
+																<div>
+																	<ng-select [(ngModel)]="isAddEditCv.is_deneyimi.content.ulke" placeholder="Ülke Seçiniz" (change)="changeCountry()">
+																		<ng-option *ngFor="let country of countryList" [value]="country.CountryName">{{country.CountryName}}</ng-option>
+																	 </ng-select>
+																</div>
+															</div>
+
+															<div id="il_group" role="group" class="col-md-6 col-12 form-group mb-2">
+																<label id="il_label" for="il_input" class="d-block">İl</label>
+																<div>
+																	<ng-select [(ngModel)]="isAddEditCv.is_deneyimi.content.il" placeholder="İl Seçiniz">
+																		<ng-option *ngFor="let province of provinceList" [value]="province.StateName">{{province.StateName}}</ng-option>
+																	 </ng-select>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label>
+															İş Tanımı
+														</label>
+														<editor
+															apiKey="2tc56hde9q30zeb835bczxj559w0h7vtwb9znqpa08y8e605"
+															[init]="{
+																language : 'tr',
+																min_height: 500,
+																preview_styles: 'font-size color',
+																resize: 'both',
+																plugins: 'autolink lists lists directionality autoresize',
+																menubar: false,
+																toolbar: 'bold italic underline italic | alignleft aligncenter alignright alignjustify |  numlist bullist',
+																grid_preset: 'Bootstrap3',
+																toolbar_mode: 'wrap',
+																automatic_uploads: true,
+																tinycomments_mode: 'embedded',
+																tinycomments_author: 'Furkan ŞAHİN',
+																relative_urls: false,
+																remove_script_host: false,
+																convert_urls: false
+															}"
+
+															[(ngModel)]="isAddEditCv.is_deneyimi.content.isTanimi"
+														></editor>
+													</div>
+												</div>
+
+												<div class="row mt-4">
+													<div [className]="isAddEditCv.is_deneyimi.isEdit == true ? 'col-12 d-flex align-items-center justify-content-between' : 'col-12 d-flex align-items-center justify-content-end'">
+														<button type="button" (click)="deleteWorkExperience" class="btn btn-danger btn-sm" *ngIf="isAddEditCv.is_deneyimi.isEdit">
+															x Sil 
+														</button>
+
+														<div>
+															<button type="button" (click)="isAddEditCv.is_deneyimi.isShow=false" class="btn btn-outline-danger btn-sm mx-3">
+																Vazgeç 
+															</button>
+															<button type="button" (click)="saveWorkExperience()" class="btn btn-primary btn-sm">
+																Kaydet
+															</button>
+														</div>                                                                    
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>  
+
+				<div class="row mb-4" id="education_info">
+					<div class="col-12 bg-white rounded shadow">
+						<div class="row">
+							<div class="col-12 p-2 p-lg-4 shadow-sm mb-4">
+								<h3>
+									Eğitim Bilgileri
+									<button class="btn btn-sm btn-outline-secondary rounded-pill ms-2 pt-0" (click)="newEducationInfo()">
+										<small>
+											+ Yeni Ekle
+										</small>
+									</button>
+								</h3>
+							</div>
+							<div class="col-12 p-2 p-lg-4">
+								<div class="row">
+									<div class="col-12">
+										<div class="row" *ngIf="!isAddEditCv.egitim_bilgileri.isShow">
+											<div class="col-12 pb-4 mb-4 border-bottom" *ngFor="let egitim of egitim_bilgileri;let index = index">
+												<div class="row">
+													<div class="col-lg-2 col-md-3 col-sm-4 col-12">
+														<div class="row">
+															<div class="col-12 text-center">
+																<img src="assets/images/university-default.webp" alt="Egitim Logo"/>
+															</div>
+															<div class="col-12 text-center mt-3" *ngIf="egitim.egitim_durumu != 'Lise'">
+																<span>
+																	Diploma Notu
+																</span>
+															</div>
+															<div class="col-12 text-center" *ngIf="egitim.egitim_durumu != 'Lise'">
+																<h5>
+																	<strong>
+																		{{egitim.diploma_notu}} / {{egitim.diploma_not_sistemi}} 
+																	</strong>
+																</h5> 
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-10 col-md-9 col-sm-8 col-12">
+														<div class="row">
+															<div class="col-12 d-flex justify-content-end">                                                                        
+																<small (click)="editEducationInfo(egitim,index)" role="button">
+																	<fa-icon [icon]="['fas', 'pencil']" class=""></fa-icon>
+																</small>
+															</div>
+
+															<div class="col-12" *ngIf="egitim.egitim_durumu == 'Lise'">
+																<div class="row">
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="egitim.lise != ''">
+																		<small class="text-secondary">
+																			Lise
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.lise}}
+																		</span>
+																	</div>
+		
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="egitim.lise_tipi != ''">
+																		<small class="text-secondary">
+																			Lise Tipi
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.lise_tipi}}
+																		</span>
+																	</div>
+		
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="egitim.lise_bolum != ''">
+																		<small class="text-secondary">
+																			Lise Bölüm
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.lise_bolum}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+
+															
+
+															<div class="col-12" *ngIf="egitim.egitim_durumu != 'Lise'">
+																<div class="row">
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="egitim.universite != ''">
+																		<small class="text-secondary">
+																			Üniversite
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.universite}}
+																		</span>
+																	</div>
+		
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="egitim.fakulte != ''">
+																		<small class="text-secondary">
+																			Fakülte
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.fakulte}}
+																		</span>
+																	</div>
+		
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="egitim.bolum != ''">
+																		<small class="text-secondary">
+																			Bölüm
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.bolum}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+															
+
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-md-4 col-sm-6 col-12 mb-2">
+																		<small class="text-secondary">
+																			Başlangıç Tarihi
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.baslangicTarihi}}
+																		</span>
+																	</div>
+																	<div class="col-md-4 col-sm-6 col-12 mb-2">
+																		<small class="text-secondary">
+																			Bitiş Tarihi
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.devamEdiyorum == true ? "Devam Ediyorum" : egitim.terk == true ? "Terk" :  egitim.bitisTarihi}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-12" *ngIf="egitim.egitim_durumu != 'Lise'">
+																<div class="row">
+																	<div class="col-md-4 col-sm-6 col-12 mb-2">
+																		<small class="text-secondary">
+																			Öğrenim Tipi
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.ogretim_tipi}}
+																		</span>
+																	</div>
+																	<div class="col-md-4 col-sm-6 col-12 mb-2">
+																		<small class="text-secondary">
+																			Öğrenim Dili
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.ogretim_dili}}
+																		</span>
+																	</div>
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="egitim.burs_tipi != 'Burs Yok'">
+																		<small class="text-secondary">
+																			Burs Tipi
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.burs_tipi}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-12" *ngIf="egitim.egitim_durumu != 'Lise'">
+																<div class="row">
+																	<div class="col-12 mb-2">
+																		<small class="text-secondary">
+																			Açıklama
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{egitim.aciklama}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row" *ngIf="isAddEditCv.egitim_bilgileri.isShow">
+											<div class="col-12">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="row" *ngIf="isAddEditCv.egitim_bilgileri.content.egitim_durumu === 'Lise'">
+
+															<div id="egitim_durumu_group" role="group" class="col-12 form-group mb-2">
+																<label id="egitim_durumu_label" for="egitim_durumu_input" class="d-block">Eğitim Durumu</label>
+																<div>
+																	<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.egitim_durumu" placeholder="Eğitim Durumu Seçiniz">
+																		<ng-option *ngFor="let educationStatus of educationStatusList" [value]="educationStatus">{{educationStatus}}</ng-option>
+																		</ng-select>
+																</div>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+
+																	<div id="lise_group" role="group" class="col-md-4 col-12 form-group mb-2">
+																		<label id="lise_label" for="lise_input" class="d-block">Lise</label>
+																		<div>
+																			<input class="border-dark form-control" id="lise_input" type="text" placeholder="Lise Adı" [(ngModel)]="isAddEditCv.egitim_bilgileri.content.lise">
+																		</div>
+																	</div>
+
+																	<div id="lise_tipi_group" role="group" class="col-md-4 col-12 form-group mb-2">
+																		<label id="lise_tipi_label" for="lise_tipi_input" class="d-block">Lise Tipi</label>
+																		<div>
+																			<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.lise_tipi" placeholder="Lise Tipi Seçiniz">
+																				<ng-option *ngFor="let highSchoolType of highSchoolTypeList" [value]="highSchoolType">{{highSchoolType}}</ng-option>
+																				</ng-select>
+																		</div>
+																	</div>
+
+																	<div id="lise_bolum_group" role="group" class="col-md-4 col-12 form-group mb-2">
+																		<label id="lise_bolum_label" for="lise_bolum_input" class="d-block">Lise Bölüm</label>
+																		<div>
+																			<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.lise_bolum" placeholder="Lise Bölümü Seçiniz">
+																				<ng-option *ngFor="let highSchoolDepartment of highSchoolDepartmentList" [value]="highSchoolDepartment">{{highSchoolDepartment}}</ng-option>
+																				</ng-select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+																	<div id="baslangic_tarihi_group" role="group" class="col-md-3 col-12 form-group mb-2">
+																		<label id="baslangic_tarihi_label" for="baslangic_tarihi_input" class="d-block">Başlangıç Tarihi</label>
+																		<div>
+																			<input class="border-dark form-control" id="baslangic_tarihi_input" type="month" placeholder="Başlangıç.." [(ngModel)]="isAddEditCv.egitim_bilgileri.content.baslangicTarihi">
+																		</div>
+																	</div>
+		
+																	<div id="bitis_tarihi_group" role="group" class="col-md-3 col-12 form-group mb-2">
+																		<label id="bitis_tarihi_label" for="bitis_tarihi_input" class="d-block">Bitiş Tarihi</label>
+																		<div>
+																			<input class="border-dark form-control" id="bitis_tarihi_input" type="month" placeholder="Bitiş.." [(ngModel)]="isAddEditCv.egitim_bilgileri.content.bitisTarihi" [disabled]="isAddEditCv.egitim_bilgileri.content.terk"> 
+																		</div>
+																	</div>
+
+																	<div id="devam_ediyorum_group" role="group" class="col-md-3 col-12 form-group mb-2" *ngIf="!isAddEditCv.egitim_bilgileri.content.terk">
+																		<div class="form-check mt-4 pt-2">
+																			<input class="form-check-input" type="checkbox" id="devam_ediyorum_input" value=true unchecked-value=false [(ngModel)]="isAddEditCv.egitim_bilgileri.content.devamEdiyorum">
+																			<label class="form-check-label" for="devam_ediyorum_input">
+																				Devam Ediyorum
+																			</label>
+																		</div>
+																	</div>
+
+																	<div id="terk_group" role="group" class="col-md-3 col-12 form-group mb-2" *ngIf="!isAddEditCv.egitim_bilgileri.content.devamEdiyorum">
+																		<div class="form-check mt-4 pt-2">
+																			<input class="form-check-input" type="checkbox" id="terk_input" value=true unchecked-value=false [(ngModel)]="isAddEditCv.egitim_bilgileri.content.terk">
+																			<label class="form-check-label" for="terk_input">
+																				Terk
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row" *ngIf="isAddEditCv.egitim_bilgileri.content.egitim_durumu !== 'Lise'">
+
+															<div id="egitim_durumu_group" role="group" class="col-12 form-group mb-2">
+																<label id="egitim_durumu_label" for="egitim_durumu_input" class="d-block">Eğitim Durumu</label>
+																<div>
+																	<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.egitim_durumu" placeholder="Eğitim Durumu Seçiniz">
+																		<ng-option *ngFor="let educationStatus of educationStatusList" [value]="educationStatus">{{educationStatus}}</ng-option>
+																		</ng-select>
+																</div>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+																	<div id="baslangic_tarihi_group" role="group" class="col-md-3 col-12 form-group mb-2">
+																		<label id="baslangic_tarihi_label" for="baslangic_tarihi_input" class="d-block">Başlangıç Tarihi</label>
+																		<div>
+																			<input class="border-dark form-control" id="baslangic_tarihi_input" type="month" placeholder="Başlangıç.." [(ngModel)]="isAddEditCv.egitim_bilgileri.content.baslangicTarihi">
+																		</div>
+																	</div>
+		
+																	<div id="bitis_tarihi_group" role="group" class="col-md-3 col-12 form-group mb-2">
+																		<label id="bitis_tarihi_label" for="bitis_tarihi_input" class="d-block">Bitiş Tarihi</label>
+																		<div>
+																			<input class="border-dark form-control" id="bitis_tarihi_input" type="month" placeholder="Bitiş.." [(ngModel)]="isAddEditCv.egitim_bilgileri.content.bitisTarihi" [disabled]="isAddEditCv.egitim_bilgileri.content.terk"> 
+																		</div>
+																	</div>
+
+																	<div id="devam_ediyorum_group" role="group" class="col-md-3 col-12 form-group mb-2" *ngIf="!isAddEditCv.egitim_bilgileri.content.terk">
+																		<div class="form-check mt-4 pt-2">
+																			<input class="form-check-input" type="checkbox" id="devam_ediyorum_input" value=true unchecked-value=false [(ngModel)]="isAddEditCv.egitim_bilgileri.content.devamEdiyorum">
+																			<label class="form-check-label" for="devam_ediyorum_input">
+																				Devam Ediyorum
+																			</label>
+																		</div>
+																	</div>
+
+																	<div id="terk_group" role="group" class="col-md-3 col-12 form-group mb-2" *ngIf="!isAddEditCv.egitim_bilgileri.content.devamEdiyorum">
+																		<div class="form-check mt-4 pt-2">
+																			<input class="form-check-input" type="checkbox" id="terk_input" value=true unchecked-value=false [(ngModel)]="isAddEditCv.egitim_bilgileri.content.terk">
+																			<label class="form-check-label" for="terk_input">
+																				Terk
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-12" *ngIf="!isAddEditCv.egitim_bilgileri.content.terk && !isAddEditCv.egitim_bilgileri.content.devamEdiyorum">
+																<div class="row">
+
+																	<div id="diploma_not_sistemi_group" role="group" class="col-md-3 col-12 form-group mb-2">
+																		<label id="diploma_not_sistemi_label" for="diploma_not_sistemi_input" class="d-block">Not Sistemi</label>
+																		<div>
+																			<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.diploma_not_sistemi" placeholder="Not Sistemi Seçiniz">
+																				<ng-option *ngFor="let gradingSystem of gradingSystemList" [value]="gradingSystem">{{gradingSystem}}</ng-option>
+																				</ng-select>
+																		</div>
+																	</div>
+
+																	<div id="diploma_notu_group" role="group" class="col-md-3 col-12 form-group mb-2">
+																		<label id="diploma_notu_label" for="diploma_notu_input" class="d-block">Diploma Notu</label>
+																		<div>
+																			<input class="border-dark form-control" id="diploma_notu_input" type="number" placeholder="Diploma notu" [(ngModel)]="isAddEditCv.egitim_bilgileri.content.diploma_notu">
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+
+																	<div id="universite_group" role="group" class="col-md-4 col-12 form-group mb-2">
+																		<label id="universite_label" for="universite_input" class="d-block">Üniversite</label>
+																		<div>
+																			<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.universite" placeholder="Üniversite Seçiniz" (change)="changeUniversity()">
+																				<ng-option *ngFor="let university of universityList" [value]="university.name">{{university.name}}</ng-option>
+																				</ng-select>
+																		</div>
+																	</div>
+
+																	<div id="fakulte_group" role="group" class="col-md-4 col-12 form-group mb-2">
+																		<label id="fakulte_label" for="fakulte_input" class="d-block">Fakülte</label>
+																		<div>
+																			<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.fakulte" placeholder="Fakülte Seçiniz" (change)="changeFaculty()">
+																				<ng-option *ngFor="let faculty of facultyList" [value]="faculty.name">{{faculty.name}}</ng-option>
+																			</ng-select>
+																		</div>
+																	</div>
+
+																	<div id="bolum_group" role="group" class="col-md-4 col-12 form-group mb-2">
+																		<label id="bolum_label" for="bolum_input" class="d-block">Bölüm</label>
+																		<div>
+																			<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.bolum" placeholder="Bölüm Seçiniz">
+																				<ng-option *ngFor="let department of departmentList" [value]="department.name">{{department.name}}</ng-option>
+																				</ng-select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+																	<div id="ogretim_tipi_group" role="group" class="col-md-3 col-12 form-group mb-2">
+																		<label id="ogretim_tipi_label" for="ogretim_tipi_input" class="d-block">Öğretim Tipi</label>
+																		<div>
+																			<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.ogretim_tipi" placeholder="Öğretim Tipi Seçiniz">
+																				<ng-option *ngFor="let educationType of educationTypeList" [value]="educationType">{{educationType}}</ng-option>
+																				</ng-select>
+																		</div>
+																	</div>
+
+																	<div id="ogretim_dili_group" role="group" class="col-md-3 col-12 form-group mb-2">
+																		<label id="ogretim_dili_label" for="ogretim_dili_input" class="d-block">Öğretim Dili</label>
+																		<div>
+																			<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.ogretim_dili" placeholder="Öğretim Dili Seçiniz">
+																				<ng-option *ngFor="let educationLanguage of educationLanguageList" [value]="educationLanguage">{{educationLanguage}}</ng-option>
+																				</ng-select>
+																		</div>
+																	</div>
+
+																	<div id="burs_tipi_group" role="group" class="col-md-3 col-12 form-group mb-2">
+																		<label id="burs_tipi_label" for="burs_tipi_input" class="d-block">Burs Tipi</label>
+																		<div>
+																			<ng-select [(ngModel)]="isAddEditCv.egitim_bilgileri.content.burs_tipi" placeholder="Burs Tipi Seçiniz">
+																				<ng-option *ngFor="let scholarshipType of scholarshipTypeList" [value]="scholarshipType">{{scholarshipType}}</ng-option>
+																				</ng-select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div id="aciklama_group" role="group" class="col-12 form-group mb-2">
+																<label id="aciklama_label" for="aciklama_input" class="d-block">Açıklama</label>
+																<div>
+																	<textarea class="border-dark form-control" id="aciklama_input" placeholder="Açıklama giriniz.." [(ngModel)]="isAddEditCv.egitim_bilgileri.content.aciklama"></textarea>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>   
+												
+												<div class="row mt-4">
+													<div [className]="isAddEditCv.egitim_bilgileri.isEdit == true ? 'col-12 d-flex align-items-center justify-content-between' : 'col-12 d-flex align-items-center justify-content-end'">
+														<button type="button" (click)="deleteEducationInfo()" class="btn btn-danger btn-sm" *ngIf="isAddEditCv.egitim_bilgileri.isEdit">
+															x Sil 
+														</button>
+
+														<div>
+															<button type="button" (click)="isAddEditCv.egitim_bilgileri.isShow=false" class="btn btn-outline-danger btn-sm mx-3">
+																Vazgeç 
+															</button>
+															<button type="button" (click)="saveEducationInfo()" class="btn btn-primary btn-sm">
+																Kaydet
+															</button>
+														</div>                                                                    
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mb-4" id="foreign_language">
+					<div class="col-12 bg-white rounded shadow">
+						<div class="row">
+							<div class="col-12 p-2 p-lg-4 shadow-sm mb-4">
+								<h3>
+									Yabancı Dil
+									<button class="btn btn-sm btn-outline-secondary rounded-pill ms-2 pt-0" (click)="newForeignLanguage()">
+										<small>
+											+ Yeni Ekle
+										</small>
+									</button>
+								</h3>
+							</div>
+							<div class="col-12 p-2 p-lg-4">
+								<div class="row">
+									<div class="col-12">
+										<div class="row" *ngIf="!isAddEditCv.yabanci_dil.isShow">
+											<div class="col-12" *ngIf="yabanci_dil && yabanci_dil.length > 0">
+												<div class="row">
+													<div class="col-md-10 mx-auto">
+														<div class="row">
+															<div class="col-6">
+																<strong class="text-primary">
+																	Dil
+																</strong>
+															</div>
+															<div class="col-6">
+																<strong class="text-primary">
+																	Seviye
+																</strong>
+															</div>
+														</div>
+													</div>
+													
+												</div>
+											</div>
+											<div class="col-12 pb-2 mb-2 border-bottom" *ngFor="let dil of yabanci_dil;let index = index">
+												<div class="row">
+													<div class="col-md-10 mx-auto">
+														<div class="row">
+															<div class="col-12 d-flex justify-content-end">
+																<small (click)="editForeignLanguage(dil,index)" role="button">
+																	<fa-icon [icon]="['fas', 'pencil']" class=""></fa-icon>
+																</small>
+															</div>
+															<div class="col-6">
+																<span class="font-weight-bold">
+																	{{dil.name}}
+																</span>
+																<br>
+																<small>
+																	{{dil.seviye == 1 ? 'Başlangıç' : dil.seviye == 2 ? 'Temel' : dil.seviye == 3 ? 'Orta' : dil.seviye == 4 ? 'İyi' : dil.seviye == 5 ? 'İleri' : ''}} <span *ngIf="dil.anaDil">(Anadil)</span>
+																</small>
+															</div>
+															<div class="col-6">
+																<ngb-rating id="star-rating-5" [(rate)]="dil.seviye" [readonly]="true" [max]="5"></ngb-rating>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row" *ngIf="isAddEditCv.yabanci_dil.isShow">
+											<div class="col-12">
+												<div class="row">
+													<div id="yabanci_dil_name_group" role="group" class="col-md-4 col-12 form-group mb-2">
+														<label id="yabanci_dil_name_label" for="yabanci_dil_name_input" class="d-block">Yabancı Dil</label>
+														<div>
+															<ng-select [(ngModel)]="isAddEditCv.yabanci_dil.content.name" placeholder="Yabancı Dil Seçiniz">
+																<ng-option *ngFor="let foreignLanguage of foreignLanguageList" [value]="foreignLanguage">{{foreignLanguage}}</ng-option>
+															</ng-select>
+														</div>
+													</div>
+
+													<div id="seviye_group" role="group" class="col-md-4 col-12 form-group mb-2">
+														<label id="seviye_label" for="seviye_input" class="d-block">Seviye</label>
+														<div>
+															<ng-select [(ngModel)]="isAddEditCv.yabanci_dil.content.seviye" placeholder="Seviye Seçiniz" (change)="isAddEditCv.yabanci_dil.content.seviye != 5 ? isAddEditCv.yabanci_dil.content.anaDil = false : ''">
+																<ng-option *ngFor="let foreignLanguageLevel of foreignLanguageLevelList" [value]="foreignLanguageLevel.value">{{foreignLanguageLevel.name}}</ng-option>
+															</ng-select>
+														</div>
+													</div>
+
+													<div id="anadil_group" role="group" class="col-md-3 col-12 form-group mb-2">
+														<div class="form-check mt-4 pt-2">
+															<input class="form-check-input" type="checkbox" id="anadil_input" value=true unchecked-value=false [(ngModel)]="isAddEditCv.yabanci_dil.content.anaDil" (change)="isAddEditCv.yabanci_dil.content.seviye=5">
+															<label class="form-check-label" for="devam_ediyorum_input">
+																Anadil
+															</label>
+														</div>
+													</div>
+												</div>  
+												
+												<div class="row mt-4">
+													<div [className]="isAddEditCv.yabanci_dil.isEdit == true ? 'col-12 d-flex align-items-center justify-content-between' : 'col-12 d-flex align-items-center justify-content-end'">
+														<button type="button" (click)="deleteForeignLanguage()" class="btn btn-danger btn-sm" *ngIf="isAddEditCv.yabanci_dil.isEdit">
+															x Sil 
+														</button>
+
+														<div>
+															<button type="button" (click)="isAddEditCv.yabanci_dil.isShow=false" class="btn btn-outline-danger btn-sm mx-3">
+																Vazgeç 
+															</button>
+															<button type="button" (click)="saveForeignLanguage()" class="btn btn-primary btn-sm">
+																Kaydet
+															</button>
+														</div>                                                                    
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- 
+				<div class="row mb-4" id="certificate">
+					<div class="col-12 bg-white rounded shadow">
+						<div class="row">
+							<div class="col-12 p-2 p-lg-4 shadow-sm mb-4">
+								<h3>
+									Sertifikalar
+									<button class="btn btn-sm btn-outline-secondary rounded-pill ms-2 pt-0" (click)="newCertificate">
+										<small>
+											+ Yeni Ekle
+										</small>
+									</button>
+								</h3>
+							</div>
+							<div class="col-12 p-2 p-lg-4">
+								<div class="row">
+									<div class="col-12">
+										<div class="row" *ngIf="!isAddEditCv.sertifikalar.isShow">
+											<div class="col-12 pb-4 mb-4 border-bottom" v-for="(sertifika,index) in cv.sertifikalar">
+												<div class="row">
+													<div class="col-12">
+														<div class="row">
+															<div class="col-12 d-flex justify-content-end">                                                                        
+																<small (click)="editCertificate(sertifika,index)" role="button">
+																	<b-icon-pencil variant="secondary" font-scale="1.3"></b-icon-pencil>
+																</small>
+															</div>
+															<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="sertifika.name != ''">
+																<small class="text-secondary">
+																	Sertifika Adı
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{sertifika.name}}
+																</span>
+															</div>
+															<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="sertifika.alindigi_kurum != ''">
+																<small class="text-secondary">
+																	Alındığı Kurum
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{sertifika.alindigi_kurum}}
+																</span>
+															</div>
+
+															<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="sertifika.tarih != ''">
+																<small class="text-secondary">
+																	Sertifika Tarihi
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{sertifika.tarih}}
+																</span>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-12 mb-2">
+																		<small class="text-secondary">
+																			Açıklama
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{sertifika.aciklama}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row" *ngElse>
+											<div class="col-12">
+												<b-form>
+													<div class="row">
+														<div class="col-md-12">
+															<div class="row">
+
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="sertifika_adi_group" label="Sertifika Adı*" label-for="sertifika_adi_input" description="" class="col-md-6 col-12">
+																			<b-form-input class="border-dark" name="sertifika_adi_input" id="sertifika_adi_input" v-model="isAddEditCv.sertifikalar.content.name" type="text" placeholder="Sertifika Adı*"></b-form-input>
+																		</b-form-group>
+																	</div>
+																</div>
+
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="alindigi_kurum_group" label="Alındığı Kurum*" label-for="alindigi_kurum_input" description="" class="col-md-6 col-12">
+																			<b-form-input class="border-dark" name="alindigi_kurum_input" id="alindigi_kurum_input" v-model="isAddEditCv.sertifikalar.content.alindigi_kurum" type="text" placeholder="Alındığı Kurum*"></b-form-input>
+																		</b-form-group>
+
+																		<b-form-group id="sertifika_tarihi_group" label="Sertifika Tarihi*" label-for="sertifika_tarihi_input" description="" class="col-md-6 col-12">
+																			<input type="month" class="form-control" name="sertifika_tarihi_input" id="sertifika_tarihi_input" v-model="isAddEditCv.sertifikalar.content.tarih" placeholder="Sertifika Tarihi..">
+																		</b-form-group>
+																	</div>
+																</div>
+
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="sertifika_aciklama_group" label="Açıklama" label-for="sertifika_aciklama_input" description="" class="col-md-6 col-12">
+																			<b-form-textarea rows="5" class="border-dark" name="sertifika_aciklama_input" id="sertifika_aciklama_input" v-model="isAddEditCv.sertifikalar.content.aciklama" type="text" placeholder="Seni diğer adaylar arasından öne çıkaracak önemli bilgilerden biri de sertifikaların. Bu alanda katıldığın sertifika programlarına yer vermelisin."></b-form-textarea>
+																		</b-form-group>
+																	</div>
+																</div>
+																
+															</div>
+														</div>
+													</div>                                                            
+
+													<div class="row mt-4">
+														<div class="col-12 d-flex align-items-center" :class="[isAddEditCv.sertifikalar.isEdit == true ? 'justify-content-between' : 'justify-content-end']">
+															<b-button type="button" (click)="deleteCertificate" rounded size="sm" variant="danger" *ngIf="isAddEditCv.sertifikalar.isEdit">
+																x Sil 
+															</b-button>
+															<div>
+																<b-button class="mx-3" type="button" (click)="isAddEditCv.sertifikalar.isShow=false" rounded size="sm" variant="outline-danger">
+																	Vazgeç 
+																</b-button>
+																<b-button class="" type="button" (click)="saveCertificate" size="sm" rounded variant="primary">
+																	Kaydet
+																</b-button>
+															</div>                                                                    
+														</div>
+													</div>
+												</b-form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mb-4" id="seminer_kurs">
+					<div class="col-12 bg-white rounded shadow">
+						<div class="row">
+							<div class="col-12 p-2 p-lg-4 shadow-sm mb-4">
+								<h3>
+									Seminerler ve Kurslar
+									<button class="btn btn-sm btn-outline-secondary rounded-pill ms-2 pt-0" (click)="newSeminerKurs">
+										<small>
+											+ Yeni Ekle
+										</small>
+									</button>
+								</h3>
+							</div>
+							<div class="col-12 p-2 p-lg-4">
+								<div class="row">
+									<div class="col-12">
+										<div class="row" *ngIf="!isAddEditCv.seminer_kurs.isShow">
+											<div class="col-12 pb-4 mb-4 border-bottom" v-for="(SK,index) in cv.seminer_kurs">
+												<div class="row">
+													<div class="col-12">
+														<div class="row">
+															<div class="col-12 d-flex justify-content-end">                                                                        
+																<small (click)="editSeminerKurs(SK,index)" role="button">
+																	<b-icon-pencil variant="secondary" font-scale="1.3"></b-icon-pencil>
+																</small>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="SK.name != ''">
+																		<small class="text-secondary">
+																			Eğitim Adı
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{SK.name}}
+																		</span>
+																	</div>
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="SK.kurum != ''">
+																		<small class="text-secondary">
+																			Eğitim Kurumu
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{SK.kurum}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="SK.baslangicTarihi != ''">
+																		<small class="text-secondary">
+																			Başlangıç Tarihi
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{SK.baslangicTarihi}}
+																		</span>
+																	</div>
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="SK.bitisTarihi != ''">
+																		<small class="text-secondary">
+																			Bitiş Tarihi
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{SK.bitisTarihi}}
+																		</span>
+																	</div>
+																	<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="SK.sure != ''">
+																		<small class="text-secondary">
+																			Süre(Saat)
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{SK.sure}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-12" *ngIf="SK.aciklama">
+																<div class="row">
+																	<div class="col-12 mb-2">
+																		<small class="text-secondary">
+																			Açıklama
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{SK.aciklama}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row" *ngElse>
+											<div class="col-12">
+												<b-form>
+													<div class="row">
+														<div class="col-md-12">
+															<div class="row">                                                                        
+																<div class="col-md-6 col-12">
+																	<div class="row">
+																		<div class="col-12">
+																			<div class="row">
+																				<b-form-group id="egitim_adi_group" label="Eğitim Adı*" label-for="egitim_adi_input" description="" class="col-md-6 col-12">
+																					<b-form-input class="border-dark" name="egitim_adi_input" id="egitim_adi_input" v-model="isAddEditCv.seminer_kurs.content.name" type="text" placeholder="Eğitim Adı*"></b-form-input>
+																				</b-form-group>
+																				<b-form-group id="egitim_kurumu_group" label="Eğitim Kurumu*" label-for="egitim_kurumu_input" description="" class="col-md-6 col-12">
+																					<b-form-input class="border-dark" name="egitim_kurumu_input" id="egitim_kurumu_input" v-model="isAddEditCv.seminer_kurs.content.kurum" type="text" placeholder="Eğitim Kurumu*"></b-form-input>
+																				</b-form-group>
+																			</div>
+																		</div>
+
+																		<div class="col-12">
+																			<div class="row">
+																				<b-form-group id="seminer_baslangic_tarihi_group" label="Başlangıç Tarihi*" label-for="seminer_baslangic_tarihi_input" description="" class="col-md-4 col-12">
+																					<input type="date" class="form-control" name="seminer_baslangic_tarihi_input" id="seminer_baslangic_tarihi_input" v-model="isAddEditCv.seminer_kurs.content.baslangicTarihi" placeholder="Başlangıç..">
+																				</b-form-group>
+
+																				<b-form-group id="seminer_bitis_tarihi_group" label="Bitiş Tarihi*" label-for="seminer_bitis_tarihi_input" description="" class="col-md-4 col-12">
+																					<input type="date" class="form-control" name="seminer_bitis_tarihi_input" id="seminer_bitis_tarihi_input" v-model="isAddEditCv.seminer_kurs.content.bitisTarihi" placeholder="Bitiş..">
+																				</b-form-group>
+
+																				<b-form-group id="egitim_sure_group" label="Süre(Saat)" label-for="egitim_sure_input" description="" class="col-md-4 col-12">
+																					<b-form-input class="border-dark" name="egitim_sure_input" id="egitim_sure_input" v-model="isAddEditCv.seminer_kurs.content.sure" type="number" placeholder="Süre(Saat)"></b-form-input>
+																				</b-form-group>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="col-md-6 col-12">
+																	<div class="row">
+																		<div class="col-12">
+																			<div class="row">
+																				<b-form-group id="egitim_aciklama_group" label="Açıklama" label-for="egitim_aciklama_input" description="" class="col-12">
+																					<b-form-textarea rows="5" class="border-dark" name="egitim_aciklama_input" id="egitim_aciklama_input" v-model="isAddEditCv.seminer_kurs.content.aciklama" type="text" placeholder="Açıklama"></b-form-textarea>
+																				</b-form-group>
+																			</div>
+																		</div>
+																	</div>
+																</div>                                                                        
+															</div>
+														</div>
+													</div>                                                            
+
+													<div class="row mt-4">
+														<div class="col-12 d-flex align-items-center" :class="[isAddEditCv.seminer_kurs.isEdit == true ? 'justify-content-between' : 'justify-content-end']">
+															<b-button type="button" (click)="deleteSeminerKurs" rounded size="sm" variant="danger" *ngIf="isAddEditCv.seminer_kurs.isEdit">
+																x Sil 
+															</b-button>
+															<div>
+																<b-button class="mx-3" type="button" (click)="isAddEditCv.seminer_kurs.isShow=false" rounded size="sm" variant="outline-danger">
+																	Vazgeç 
+																</b-button>
+																<b-button class="" type="button" (click)="saveSeminerKurs" size="sm" rounded variant="primary">
+																	Kaydet
+																</b-button>
+															</div>                                                                    
+														</div>
+													</div>
+												</b-form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mb-4" id="project">
+					<div class="col-12 bg-white rounded shadow">
+						<div class="row">
+							<div class="col-12 p-2 p-lg-4 shadow-sm mb-4">
+								<h3>
+									Projeler
+									<button class="btn btn-sm btn-outline-secondary rounded-pill ms-2 pt-0" (click)="newProject">
+										<small>
+											+ Yeni Ekle
+										</small>
+									</button>
+								</h3>
+							</div>
+							<div class="col-12 p-2 p-lg-4">
+								<div class="row">
+									<div class="col-12">
+										<div class="row" *ngIf="!isAddEditCv.projeler.isShow">
+											<div class="col-12 pb-4 mb-4 border-bottom" v-for="(proje,index) in cv.projeler">
+												<div class="row">
+													<div class="col-12">
+														<div class="row">
+															<div class="col-12 d-flex justify-content-end">                                                                        
+																<small (click)="editProject(proje,index)" role="button">
+																	<b-icon-pencil variant="secondary" font-scale="1.3"></b-icon-pencil>
+																</small>
+															</div>
+															<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="proje.name != ''">
+																<small class="text-secondary">
+																	Proje Adı
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{proje.name}}
+																</span>
+															</div>
+															<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="proje.tarih != ''">
+																<small class="text-secondary">
+																	Proje Tarihi
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{proje.tarih}}
+																</span>
+															</div>
+
+															<div class="col-md-4 col-sm-6 col-12 mb-2" *ngIf="proje.url != ''">
+																<small class="text-secondary">
+																	Proje URL'i
+																</small>
+																<br/>
+																<span class="font-weight-bold">
+																	{{proje.url}}
+																</span>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-12 mb-2">
+																		<small class="text-secondary">
+																			Açıklama
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{proje.aciklama}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row" *ngElse>
+											<div class="col-12">
+												<b-form>
+													<div class="row">
+														<div class="col-md-12">
+															<div class="row">
+
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="proje_adi_group" label="Proje Adı*" label-for="proje_adi_input" description="" class="col-md-6 col-12">
+																			<b-form-input class="border-dark" name="proje_adi_input" id="proje_adi_input" v-model="isAddEditCv.projeler.content.name" type="text" placeholder="Proje Adı*"></b-form-input>
+																		</b-form-group>
+																	</div>
+																</div>
+
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="proje_tarihi_group" label="Proje Tarihi*" label-for="proje_tarihi_input" description="" class="col-md-6 col-12">
+																			<input type="month" class="form-control" name="proje_tarihi_input" id="proje_tarihi_input" v-model="isAddEditCv.projeler.content.tarih" placeholder="Proje Tarihi*">
+																		</b-form-group>
+
+																		<b-form-group id="proje_url_group" label="Proje URL'i" label-for="proje_url_input" description="" class="col-md-6 col-12">
+																			<b-form-input class="border-dark" name="proje_url_input" id="proje_url_input" v-model="isAddEditCv.projeler.content.url" type="text" placeholder="Proje URL'i"></b-form-input>
+																		</b-form-group>
+																	</div>
+																</div>
+
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="proje_aciklama_group" label="Açıklama" label-for="proje_aciklama_input" description="" class="col-md-6 col-12">
+																			<b-form-textarea rows="5" class="border-dark" name="proje_aciklama_input" id="proje_aciklama_input" v-model="isAddEditCv.projeler.content.aciklama" type="text" placeholder="Ekip ruhu taşıdığını ve iyi bir takım oyuncusu olduğunu en iyi ifade edebileceğin bölümlerden biri “Projeler” alanı. Projelerinden bahset ve öne çık!"></b-form-textarea>
+																		</b-form-group>
+																	</div>
+																</div>                                                                        
+															</div>
+														</div>
+													</div>                                                            
+
+													<div class="row mt-4">
+														<div class="col-12 d-flex align-items-center" :class="[isAddEditCv.projeler.isEdit == true ? 'justify-content-between' : 'justify-content-end']">
+															<b-button type="button" (click)="deleteProject" rounded size="sm" variant="danger" *ngIf="isAddEditCv.projeler.isEdit">
+																x Sil 
+															</b-button>
+															<div>
+																<b-button class="mx-3" type="button" (click)="isAddEditCv.projeler.isShow=false" rounded size="sm" variant="outline-danger">
+																	Vazgeç 
+																</b-button>
+																<b-button class="" type="button" (click)="saveProject" size="sm" rounded variant="primary">
+																	Kaydet
+																</b-button>
+															</div>                                                                    
+														</div>
+													</div>
+												</b-form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mb-4" id="referanslar">
+					<div class="col-12 bg-white rounded shadow">
+						<div class="row">
+							<div class="col-12 p-2 p-lg-4 shadow-sm mb-4">
+								<h3>
+									Referanslar
+									<button class="btn btn-sm btn-outline-secondary rounded-pill ms-2 pt-0" (click)="newReferans">
+										<small>
+											+ Yeni Ekle
+										</small>
+									</button>
+								</h3>
+							</div>
+							<div class="col-12 p-2 p-lg-4">
+								<div class="row">
+									<div class="col-12">
+										<div class="row" *ngIf="!isAddEditCv.referanslar.isShow">
+											<div class="col-12 pb-4 mb-4 border-bottom" v-for="(referans,index) in cv.referanslar">
+												<div class="row">
+													<div class="col-12">
+														<div class="row">
+															<div class="col-12 d-flex justify-content-end">                                                                        
+																<small (click)="editReferasn(referans,index)" role="button">
+																	<b-icon-pencil variant="secondary" font-scale="1.3"></b-icon-pencil>
+																</small>
+															</div>
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-md-9 col-sm-8 col-12 mb-2" *ngIf="referans.type != ''">
+																		<small class="text-secondary">
+																			Referans Tipi
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{referans.type}}
+																		</span>
+																	</div>
+																	<div class="col-md-3 col-sm-4 col-12 mb-2" *ngIf="referans.language != ''">
+																		<small class="text-secondary">
+																			Referans Dili
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{referans.language}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+															
+
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-md-3 col-sm-6 col-12 mb-2" *ngIf="referans.name != ''">
+																		<small class="text-secondary">
+																			Adı
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{referans.name}}
+																		</span>
+																	</div>
+																	<div class="col-md-3 col-sm-6 col-12 mb-2" *ngIf="referans.surname != ''">
+																		<small class="text-secondary">
+																			Soyadı
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{referans.surname}}
+																		</span>
+																	</div>
+																	<div class="col-md-3 col-sm-6 col-12 mb-2" *ngIf="referans.email">
+																		<small class="text-secondary">
+																			E-Mail
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{referans.email}}
+																		</span>
+																	</div>
+																	<div class="col-md-3 col-sm-6 col-12 mb-2" *ngIf="referans.phone">
+																		<small class="text-secondary">
+																			Telefon
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{referans.phone}}
+																		</span>
+																	</div>
+																</div>
+															</div>                                                                    
+
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-sm-6 col-12 mb-2" *ngIf="referans.firmaAdi">
+																		<small class="text-secondary">
+																			Firma Adı
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{referans.firmaAdi}}
+																		</span>
+																	</div>
+																	<div class="col-sm-6 col-12 mb-2" *ngIf="referans.pozisyon">
+																		<small class="text-secondary">
+																			Pozisyon
+																		</small>
+																		<br/>
+																		<span class="font-weight-bold">
+																			{{referans.pozisyon}}
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row" *ngElse>
+											<div class="col-12">
+												<b-form>
+													<div class="row">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="referans_tipi_group" label="Referans Tipi*" label-for="referans_tipi_select" description="" class="col-md-9 col-sm-8 col-12">
+																			<b-form-select v-model="isAddEditCv.referanslar.content.type">
+																				<b-form-select-option value=null disabled selected>Referans Tipi Seçiniz</b-form-select-option>
+																				<b-form-select-option value="İş Hayatıyla İlgili Referans (Yöneticilerinizden)">İş Hayatıyla İlgili Referans (Yöneticilerinizden)</b-form-select-option>
+																				<b-form-select-option value="İş Hayatıyla İlgili Referans (İş Arkadaşlarınızdan)">İş Hayatıyla İlgili Referans (İş Arkadaşlarınızdan)</b-form-select-option>
+																				<b-form-select-option value="İş Hayatıyla İlgili Referans (Size Bağlı Çalışanlardan)">İş Hayatıyla İlgili Referans (Size Bağlı Çalışanlardan)</b-form-select-option>
+																				<b-form-select-option value="Akademik Referans">Akademik Referans</b-form-select-option>
+																				<b-form-select-option value="Aile Bireylerinden Referans">Aile Bireylerinden Referans</b-form-select-option>
+																				<b-form-select-option value="Kamu Çalışanlarından Referans">Kamu Çalışanlarından Referans</b-form-select-option>
+																				<b-form-select-option value="Sosyal Faaliyetlerinizle İlgili Referans">Sosyal Faaliyetlerinizle İlgili Referans</b-form-select-option>                                                                                    </b-form-select>
+																		</b-form-group>
+																		<b-form-group id="referans_dili_group" label="Referans Dili*" label-for="referans_dili_select" description="" class="col-md-3 col-sm-4 col-12">
+																			<b-form-select v-model="isAddEditCv.referanslar.content.language">
+																				<b-form-select-option value=null disabled selected>Referans Dili Seçiniz</b-form-select-option>
+																				<b-form-select-option value="Türkçe">Türkçe</b-form-select-option>
+																				<b-form-select-option value="İngilizce">İngilizce</b-form-select-option>                                                                                  
+																			</b-form-select>
+																		</b-form-group>
+																	</div>
+																</div>
+
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="referans_adi_group" label="Referans Adı*" label-for="referans_adi_input" description="" class="col-sm-6 col-12">
+																			<b-form-input class="border-dark" name="referans_adi_input" id="referans_adi_input" v-model="isAddEditCv.referanslar.content.name" type="text" placeholder="Referans Adı*"></b-form-input>
+																		</b-form-group>
+
+																		<b-form-group id="referans_soyadi_group" label="Referans Soyadı*" label-for="referans_soyadi_input" description="" class="col-sm-6 col-12">
+																			<b-form-input class="border-dark" name="referans_soyadi_input" id="referans_soyadi_input" v-model="isAddEditCv.referanslar.content.surname" type="text" placeholder="Referans Soyadı*"></b-form-input>
+																		</b-form-group>
+																	</div>
+																</div>                                                                        
+
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="referans_firma_adi_group" label="Çalıştığı Firmanın Adı" label-for="referans_firma_adi_input" description="" class="col-12">
+																			<b-form-input class="border-dark" name="referans_firma_adi_input" id="referans_firma_adi_input" v-model="isAddEditCv.referanslar.content.firmaAdi" type="text" placeholder="Çalıştığı Firmanın Adı"></b-form-input>
+																		</b-form-group>
+																	</div>
+																</div>
+
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="referans_firma_position_group" label="Firmadaki Pozisyon*" label-for="referans_firma_position_input" description="" class="col-12">
+																			<b-form-input class="border-dark" name="referans_firma_position_input" id="referans_firma_position_input" v-model="isAddEditCv.referanslar.content.position" type="text" placeholder="Firmadaki Pozisyon*"></b-form-input>
+																		</b-form-group>
+																	</div>
+																</div>
+
+																<div class="col-12">
+																	<div class="row">
+																		<b-form-group id="referans_email_group" label="E-Mail Adresi" label-for="referans_email_input" description="" class="col-sm-6 col-12">
+																			<b-form-input class="border-dark" name="referans_email_input" id="referans_email_input" v-model="isAddEditCv.referanslar.content.email" type="email" placeholder="E-Mail Adresi"></b-form-input>
+																		</b-form-group>
+
+																		<b-form-group id="referans_phone_group" label="Telefonu" label-for="referans_phone_input" description="" class="col-sm-6 col-12">
+																			<b-form-input class="border-dark" name="referans_phone_input" id="referans_phone_input" v-model="isAddEditCv.referanslar.content.phone" type="tel" placeholder="Telefonu"></b-form-input>
+																		</b-form-group>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>                                                            
+
+													<div class="row mt-4">
+														<div class="col-12 d-flex align-items-center" :class="[isAddEditCv.referanslar.isEdit == true ? 'justify-content-between' : 'justify-content-end']">
+															<b-button type="button" (click)="deleteReferans" rounded size="sm" variant="danger" *ngIf="isAddEditCv.referanslar.isEdit">
+																x Sil 
+															</b-button>
+															<div>
+																<b-button class="mx-3" type="button" (click)="isAddEditCv.referanslar.isShow=false" rounded size="sm" variant="outline-danger">
+																	Vazgeç 
+																</b-button>
+																<b-button class="" type="button" (click)="saveReferans" size="sm" rounded variant="primary">
+																	Kaydet
+																</b-button>
+															</div>                                                                    
+														</div>
+													</div>
+												</b-form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+.add-image-profile {
+    height: 100%;
+    border: 1px dashed #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    transition: all .3s ease;
+    font-weight: 600;
+
+    &:hover {
+        border-color: #0286a7;
+        color: #0286a7;
+        cursor: pointer;
+        transition: all .3s ease;
+        box-shadow: 0px 0px 2px 1px #0286a7;
+    }
+}
+
+.image-profile img {
+    max-width: 80px;
+}
