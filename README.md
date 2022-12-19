@@ -2,7 +2,7 @@
 
 # Site cloudflare linki https://invaco.pages.dev/
 
-## Node.js versiyon 14.20.0
+## Node.js versiyon 14.20.0 ve üstü
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
