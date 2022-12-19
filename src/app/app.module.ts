@@ -9,9 +9,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EditorModule } from '@tinymce/tinymce-angular';
 
+import { ConfirmationDialogComponent } from './components/confirm/confirmation-dialog.component';
+import { ConfirmationDialogService } from './components/confirm/confirmation-dialog.service';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ConfirmationDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,8 @@ import { EditorModule } from '@tinymce/tinymce-angular';
     FontAwesomeModule,
     EditorModule
   ],
-  providers: [],
+  providers: [ConfirmationDialogService],
+  entryComponents: [ ConfirmationDialogComponent ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

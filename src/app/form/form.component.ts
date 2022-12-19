@@ -5,7 +5,7 @@ import { NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { EditorModule } from '@tinymce/tinymce-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ConfirmDialogService } from './../components/confirm/confirm.service';
+import { ConfirmationDialogService } from '../components/confirm/confirmation-dialog.service';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { WorkExperience } from './../models/WorkExperienceDto';
 import { EducationInfo } from './../models/EducationInfoDto';
@@ -29,7 +29,6 @@ import departments from '../../assets/json/departments.json'
         NgSelectModule,
         NgbRatingModule
     ],
-    providers: [ConfirmDialogService],
     styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
@@ -134,70 +133,12 @@ export class FormComponent implements OnInit {
                 seviye: 1,
                 anaDil: false
             }
-        },
-        seminer_kurs: {
-            index: null,
-            isShow: false,
-            isEdit: false,
-            content: {
-                name: null,
-                kurum: null,
-                baslangicTarihi: null,
-                bitisTarihi: null,
-                sure: null,
-                aciklama: null,
-            }
-        },
-        projeler: {
-            index: null,
-            isShow: false,
-            isEdit: false,
-            content: {
-                name: null,
-                tarih: null,
-                url: null,
-                aciklama: null
-            }
-        },
-        sertifikalar: {
-            index: null,
-            isShow: false,
-            isEdit: false,
-            content: {
-                name: null,
-                alindigi_kurum: null,
-                tarih: null,
-                aciklama: null
-            }
-        },
-        ek_bilgiler: {
-            index: null,
-            isShow: false,
-            isEdit: false,
-            content: {
-                name: null
-            }
-        },
-        referanslar: {
-            index: null,
-            isShow: false,
-            isEdit: false,
-            content: {
-                type: null,
-                language: null,
-                name: null,
-                surname: null,
-                firmaAdi: null,
-                position: null,
-                email: null,
-                phone: null
-            }
         }
     }
 
     constructor(
         library: FaIconLibrary,
-        private confirmDialogService: ConfirmDialogService
+        private confirmationDialogService: ConfirmationDialogService
     ) {
         library.addIconPacks(fas);
     }
@@ -256,14 +197,20 @@ export class FormComponent implements OnInit {
 
     deleteWorkExperience() {
         const _this = this;
-        _this.confirmDialogService.confirmThis('İş deneyimini silmek istediğinize emin misiniz?', () => {
-            if(_this.isAddEditCv.is_deneyimi.index)
-                _this.is_deneyimi.splice(_this.isAddEditCv.is_deneyimi.index, 1);
-            _this.resetWorkExperience();
-            _this.isAddEditCv.is_deneyimi.index = null;
-            _this.isAddEditCv.is_deneyimi.isShow = false;
-            _this.isAddEditCv.is_deneyimi.isEdit = false;
-        }, () => {
+        this.confirmationDialogService.confirm('Emin misiniz', 'İş deneyimini silmek istediğinize emin misiniz?' , 'Evet','Hayır')
+        .then((confirmed) => {
+            if(confirmed == true) {
+                if(_this.isAddEditCv.is_deneyimi.index || _this.isAddEditCv.is_deneyimi.index == 0)
+                    _this.is_deneyimi.splice(_this.isAddEditCv.is_deneyimi.index, 1);
+                _this.resetWorkExperience();
+                _this.isAddEditCv.is_deneyimi.index = null;
+                _this.isAddEditCv.is_deneyimi.isShow = false;
+                _this.isAddEditCv.is_deneyimi.isEdit = false;
+            }
+            
+        })
+        .catch((err) => {
+            console.log(err)
         });
 
         
@@ -303,6 +250,7 @@ export class FormComponent implements OnInit {
     }
 
     newEducationInfo() {
+        this.resetEducationInfo();
         this.isAddEditCv.egitim_bilgileri.isShow = true;
     }
 
@@ -315,18 +263,21 @@ export class FormComponent implements OnInit {
 
     deleteEducationInfo() {
         const _this = this;
-        _this.confirmDialogService.confirmThis('Eğitim bilgisini silmek istediğinize emin misiniz?', () => {
-
-            if(_this.isAddEditCv.egitim_bilgileri.index)
-                _this.egitim_bilgileri.splice(_this.isAddEditCv.egitim_bilgileri.index, 1);
-            _this.resetEducationInfo();
-            _this.isAddEditCv.egitim_bilgileri.index = null;
-            _this.isAddEditCv.egitim_bilgileri.isShow = false;
-            _this.isAddEditCv.egitim_bilgileri.isEdit = false;
-        }, () => {
-        });
-
-        
+        this.confirmationDialogService.confirm('Emin misiniz', 'Eğitim bilgisini silmek istediğinize emin misiniz?' , 'Evet','Hayır')
+        .then((confirmed) => {
+            if(confirmed == true) {
+                if(_this.isAddEditCv.egitim_bilgileri.index || _this.isAddEditCv.egitim_bilgileri.index == 0)
+                    _this.egitim_bilgileri.splice(_this.isAddEditCv.egitim_bilgileri.index, 1);
+                _this.resetEducationInfo();
+                _this.isAddEditCv.egitim_bilgileri.index = null;
+                _this.isAddEditCv.egitim_bilgileri.isShow = false;
+                _this.isAddEditCv.egitim_bilgileri.isEdit = false;
+            }
+            
+        })
+        .catch((err) => {
+            console.log(err)
+        });        
     }
 
     saveEducationInfo(){
@@ -381,17 +332,21 @@ export class FormComponent implements OnInit {
 
     deleteForeignLanguage() {
         const _this = this;
-        _this.confirmDialogService.confirmThis('Dili silmek istediğinize emin misiniz?', () => {
-            if(_this.isAddEditCv.yabanci_dil.index)
-                _this.yabanci_dil.splice(_this.isAddEditCv.yabanci_dil.index, 1);
-            _this.resetForeignLanguage();
-            _this.isAddEditCv.yabanci_dil.index = null;
-            _this.isAddEditCv.yabanci_dil.isShow = false;
-            _this.isAddEditCv.yabanci_dil.isEdit = false;
-        }, () => {
-        });
-
-        
+        this.confirmationDialogService.confirm('Emin misiniz', 'Dili silmek istediğinize emin misiniz?' , 'Evet','Hayır')
+        .then((confirmed) => {
+            if(confirmed == true) {
+                if(_this.isAddEditCv.yabanci_dil.index || _this.isAddEditCv.yabanci_dil.index == 0)
+                    _this.yabanci_dil.splice(_this.isAddEditCv.yabanci_dil.index, 1);
+                _this.resetForeignLanguage();
+                _this.isAddEditCv.yabanci_dil.index = null;
+                _this.isAddEditCv.yabanci_dil.isShow = false;
+                _this.isAddEditCv.yabanci_dil.isEdit = false;
+            }
+            
+        })
+        .catch((err) => {
+            console.log(err)
+        }); 
     }
 
     saveForeignLanguage(){
