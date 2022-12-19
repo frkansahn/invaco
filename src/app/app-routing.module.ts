@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
-  { path: 'invaco', component: FormComponent },
+  { path: '', component: FormComponent },
 ];
 
 @NgModule({
